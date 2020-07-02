@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Assignment_game
 {
-    class Logicclass
+    public class Logicclass
     {
         //this is the bullet
         public int Bullet;
