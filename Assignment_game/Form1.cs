@@ -18,6 +18,7 @@ namespace Assignment_game
         {
             InitializeComponent();
         }
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             Load.Enabled = true;
@@ -26,8 +27,8 @@ namespace Assignment_game
             shootAway.Enabled = false;
         }
 
-
-        private void button4_Click(object sender, EventArgs e)
+        //Shoot Away button
+        private void shootAway_Click(object sender, EventArgs e)
         {
            if (Logic.ShootingAwayChances==0)
             {
@@ -38,8 +39,8 @@ namespace Assignment_game
             SoundPlayer player = new SoundPlayer(Resource1.GunSound);
             player.Play();
         }
-
-        private void button1_Click_2(object sender, EventArgs e)
+        // Load button
+        private void Load_Click_2(object sender, EventArgs e)
         {
             Logic.Load();
             Load.Enabled = false;
@@ -52,8 +53,8 @@ namespace Assignment_game
 
             player.Play();
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        //Shoot A Head button
+        private void ShootaHead_Click(object sender, EventArgs e)
         {
             Logic.ShootaHead();
             PlayAgain.Enabled = true;
@@ -61,8 +62,8 @@ namespace Assignment_game
             SoundPlayer player = new SoundPlayer(Resource1.Gunshoot);
             player.Play();
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        //Spin button
+        private void Spin_Click(object sender, EventArgs e)
         {
             Logic.Spin();
             Logic.Load();
@@ -82,7 +83,7 @@ namespace Assignment_game
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Load_Click(object sender, EventArgs e)
         {
             Logic.Load();
             Load.Enabled = true;

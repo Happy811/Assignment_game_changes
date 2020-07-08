@@ -48,7 +48,7 @@
             this.Load.TabIndex = 0;
             this.Load.Text = "Load";
             this.Load.UseVisualStyleBackColor = true;
-            this.Load.Click += new System.EventHandler(this.button1_Click_2);
+            this.Load.Click += new System.EventHandler(this.Load_Click_2);
             // 
             // Spin
             // 
@@ -58,7 +58,7 @@
             this.Spin.TabIndex = 1;
             this.Spin.Text = "Spin";
             this.Spin.UseVisualStyleBackColor = true;
-            this.Spin.Click += new System.EventHandler(this.button2_Click);
+            this.Spin.Click += new System.EventHandler(this.Spin_Click);
             // 
             // ShootaHead
             // 
@@ -68,7 +68,7 @@
             this.ShootaHead.TabIndex = 2;
             this.ShootaHead.Text = "Shoot ahead";
             this.ShootaHead.UseVisualStyleBackColor = true;
-            this.ShootaHead.Click += new System.EventHandler(this.button3_Click);
+            this.ShootaHead.Click += new System.EventHandler(this.ShootaHead_Click);
             // 
             // shootAway
             // 
@@ -78,7 +78,7 @@
             this.shootAway.TabIndex = 3;
             this.shootAway.Text = "Shoot away";
             this.shootAway.UseVisualStyleBackColor = true;
-            this.shootAway.Click += new System.EventHandler(this.button4_Click);
+            this.shootAway.Click += new System.EventHandler(this.shootAway_Click);
             // 
             // textBox1
             // 
@@ -105,7 +105,7 @@
             this.PlayAgain.TabIndex = 6;
             this.PlayAgain.Text = "PlayAgain";
             this.PlayAgain.UseVisualStyleBackColor = true;
-            this.PlayAgain.Click += new System.EventHandler(this.button1_Click);
+            this.PlayAgain.Click += new System.EventHandler(this.Load_Click);
             // 
             // pictureBox1
             // 
@@ -133,7 +133,7 @@
             this.Controls.Add(this.Spin);
             this.Controls.Add(this.Load);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

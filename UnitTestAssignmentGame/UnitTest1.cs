@@ -9,7 +9,7 @@ namespace UnitTestAssignmentGame
     {
         Assignment_game.Logicclass Logic = new Assignment_game.Logicclass();
 
-
+         //testing of load
         [TestMethod]
         public void LoadTest()
         {
@@ -23,6 +23,7 @@ namespace UnitTestAssignmentGame
                 Assert.IsFalse(false);
             }
         }
+        //testing of spin
         [TestMethod]
         public void SpinTest()
         {

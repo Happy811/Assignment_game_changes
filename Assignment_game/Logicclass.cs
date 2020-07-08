@@ -24,12 +24,12 @@ namespace Assignment_game
             Random rand = new Random();
             Bullet = rand.Next(0, 6);
         }
-        //this function Shoot a head
+        //this function is Shoot a head
         public void ShootaHead()
         {
             if (Bullet == 5)
             {
-                MessageBox.Show("you die");
+                MessageBox.Show("you Finish");
                 Points = Points - 5;
             }
             else
@@ -38,12 +38,13 @@ namespace Assignment_game
                 Bullet++;
             }
         }
+        //This function is ShootAway
         public void shootAway()
-        {
+        { 
             ShootingAwayChances--;
             if (ShootingAwayChances == 0)
             {
-                MessageBox.Show("You missed the chance");
+                MessageBox.Show("You Won ");
             }
             else
             {
