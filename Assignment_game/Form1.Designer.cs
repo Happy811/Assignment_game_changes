@@ -105,7 +105,7 @@
             this.PlayAgain.TabIndex = 6;
             this.PlayAgain.Text = "PlayAgain";
             this.PlayAgain.UseVisualStyleBackColor = true;
-            this.PlayAgain.Click += new System.EventHandler(this.Load_Click);
+            this.PlayAgain.Click += new System.EventHandler(this.PlayAgain_Click);
             // 
             // pictureBox1
             // 

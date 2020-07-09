@@ -14,6 +14,10 @@ namespace Assignment_game
     public partial class Form1 : Form
     {
         Logicclass Logic = new Logicclass();
+
+
+
+
         public Form1()
         {
             InitializeComponent();
@@ -33,6 +37,8 @@ namespace Assignment_game
            if (Logic.ShootingAwayChances==0)
             {
                 shootAway.Enabled = false;
+               
+                
                 PlayAgain.Enabled = true; 
             }
             Logic.shootAway();
@@ -55,8 +61,10 @@ namespace Assignment_game
         }
         //Shoot A Head button
         private void ShootaHead_Click(object sender, EventArgs e)
+            
         {
             Logic.ShootaHead();
+          
             PlayAgain.Enabled = true;
             textBox1.Text = Logic.Points + ""; 
             SoundPlayer player = new SoundPlayer(Resource1.Gunshoot);
@@ -66,7 +74,6 @@ namespace Assignment_game
         private void Spin_Click(object sender, EventArgs e)
         {
             Logic.Spin();
-            Logic.Load();
             Load.Enabled = false;
             Spin.Enabled = false;
             ShootaHead.Enabled = true;
@@ -82,8 +89,8 @@ namespace Assignment_game
         {
 
         }
-
-        private void Load_Click(object sender, EventArgs e)
+        //PlayAgain button
+        private void PlayAgain_Click(object sender, EventArgs e)
         {
             Logic.Load();
             Load.Enabled = true;

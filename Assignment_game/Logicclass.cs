@@ -14,6 +14,7 @@ namespace Assignment_game
         public int Bullet;
         public int Points = 0;
         public int ShootingAwayChances = 2;
+        public int ShootingaheadChances = 5;
 
         public void Load()
         {
@@ -44,14 +45,14 @@ namespace Assignment_game
             ShootingAwayChances--;
             if (ShootingAwayChances == 0)
             {
-                MessageBox.Show("You Won ");
+                MessageBox.Show("You Lost ");
             }
             else
             {
                 if (Bullet == 5)
                 {
                     MessageBox.Show("You survive");
-                    Points = Points + 8;
+                    Points = Points + 5;
                 }
                 else
                 {
